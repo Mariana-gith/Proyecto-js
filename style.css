@@ -1,5 +1,24 @@
+.card {
+  background-color: #80808042;
+}
+
+.car-carrito {
+  padding-top: 10%;
+  padding-bottom: 40%;
+}
+
 .body_bgColor {
   background-image: url(./assets/coverBlanqueria.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+}
+
+.form-indx {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*

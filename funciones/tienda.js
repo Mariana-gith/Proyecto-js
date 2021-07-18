@@ -76,7 +76,7 @@ const mostrarCarro =()=>{
   let carritoArray = JSON.parse( localStorage.getItem('Lista de compras'))
   
   if( carritoArray ==undefined){    
-    contenido.innerHTML = "Por favor ingrese una compra"     
+    contenido.innerHTML = "No hay compras ingresadas"     
   } else {
     contenido.innerHTML = "";
   }
