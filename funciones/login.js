@@ -19,7 +19,7 @@ const log =()=>{
         mensaje.innerHTML=`Bienvenide ${usuario}`
 
         setTimeout (()=>{
-            window.location= '../pages/tienda.html';
+            window.location= './pages/tienda.html';
         },2000)
     } else { mensaje.className= "text-danger"
     mensaje.innerHTML=`usuario o contraseña incorrecta`
