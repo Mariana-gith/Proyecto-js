@@ -16,7 +16,7 @@ const log =()=>{
 
 
         mensaje.className= "text-success"
-        mensaje.innerHTML=`Bienvenide ${usuario}`
+        mensaje.innerHTML=`Bienvenid@ ${usuario}`
 
         setTimeout (()=>{
             window.location= './pages/tienda.html';
