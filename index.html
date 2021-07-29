@@ -27,37 +27,39 @@
         
         <main role="main" class="inner cover">
 
-            <div id="containe-fluid" ></div>
-              <h1 class="cover-heading">Todo lo que buscas al mejor precio</h1>
-            <p class="lead"> <h3>Usuario : usuario1</h3></p>
-            <p class="lead"> <h3>Contraseña : 123456789</h3></p>
-            
+          
+              <h1 class="titulo">Todo lo que buscas al mejor precio</h1>
+              <p  class=""> <h3 id="nombre">Usuario : usuario1</h3></p>
+              <p class=""> <h3  id=" contra">Contraseña : 123456789</h3></p>
+  
+        
+                          
             <!--<a href="#" class="btn btn-lg btn-secondary">Ir a la Tienda</a>-->
          
             
             <div class="row" ></div>
                     <div class="row pt-5 form-indx" id="App">                   
-                        <div class="col-md-10 justify-content-center " >
-                          <div class="card mt-5 bg-cards">
-                            <div class="mb-3">
-                              <!-- mail-->
-                              <label  for="exampleFormControlInput1" class="form-label">Nombre</label>
-                              <input id="nombreUsuario" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu e.mail">
-                            </div>
-                              <!--password-->
-                              <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input  id="contrasenia" type="password" class="form-control" placeholder="Ingresa la contraseña" >
+                        <div  class="col-md-10 justify-content-center " >
+                            <div  class="card mt-5 bg-cards">
+                              <div id="form-index" >
+                                <!-- mail-->
+                                <label  for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                <input id="nombreUsuario" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu e.mail">
                               </div>
-                              <!---boton-->
-                          <div class="d-grid gap-2 mt-3">
-                            
-                            <input onclick="log()" type="button" value="Guardar" class="btn btn-primary" />
-                          </div>
-                          <div class="d.flex jutify-content center" >
-                            <p id="mensajeValidacion" ></p>
-                          </div>
-                    </form>            
+                                <!--password-->
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input  id="contrasenia" type="password" class="form-control" placeholder="Ingresa la contraseña" >
+                                </div>
+                                <!---boton-->
+                              <div class="d-grid gap-2 mt-3">
+                              
+                              <input onclick="log()" type="button" value="Guardar" class="btn btn-primary" />
+                            </div>
+                            <div class="d.flex jutify-content center" >
+                              <p id="mensajeValidacion" ></p>
+                            </div>
+                      </div>
             </div>
             
         </main>
@@ -86,8 +88,10 @@
         </footer> 
         </div>
         
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
         <script src="./funciones/login.js"></script>
         <script src="./class/producto.js"></script>
         <script src="./home.js"></script>

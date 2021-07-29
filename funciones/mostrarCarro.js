@@ -1,13 +1,14 @@
 
 
- 
+ var carrito=$('#carro')
 
 const mostrarCompra =()=> {
-  
     let comprados= "";
     let carroArray = JSON.parse( localStorage.getItem('lista de compras'))
     if (carroArray == undefined){
-        $('#carro').html('<p>No se ingresaron compras<p/>')
+        carrito.html('<p>No se ingresaron compras<p/>') 
+        alert('No se ingresaron Pedidos')
+       
     }else{
         carroArray.forEach(compra => {comprados+=
                 `<table class="table table-light">
@@ -23,8 +24,17 @@ const mostrarCompra =()=> {
 
                 </div>`        
         });
+
+        carrito.hide()
+        carrito.show(3000)
     }
-    $('#carro').html(comprados)
+    
+    carrito.html(comprados)
+    
+    
+
+    
+    
 }
 
 
@@ -36,3 +46,6 @@ const irAlatienda = ()=> {
       window.location= './carrito.html';
   },1000)
    }
+
+
+   

@@ -1,0 +1,32 @@
+
+    [ {"id":1000,
+        "nombre":"sabana",
+        "tipo":"simple",
+        "precio": 17000,
+        "img": " ../assets/OIP.jfif" },
+        
+        
+        {"id":1001,
+        "nombre":"toallon",
+        "tipo":"simple",
+        "precio": 18000,
+        "img": "../assets/OIP.jfif" },
+        
+        
+        {"id":1002,
+        "nombre":"cubre cama",
+        "tipo":"simple",
+        "precio": 19000,
+        "img":"../assets/OIP.jfif" },
+        
+        
+        {"id":1003,
+        "nombre":"sabana",
+        "tipo":"doble", 
+        "precio":17100,
+        "img": "../assets/OIP.jfif"}
+
+        
+    ]
+        
+

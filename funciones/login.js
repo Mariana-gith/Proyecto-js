@@ -4,7 +4,7 @@ var contrasena = "123456789";
 
 
 const log =()=>{
-    let usuarioLog = document.getElementById('nombreUsuario').value 
+    let usuarioLog = $('#nombreUsuario').val() 
     let contrasenaLog = document.getElementById('contrasenia').value
     let mensaje = document.getElementById('mensajeValidacion')
 
