@@ -1,7 +1,7 @@
 var usuario = 'usuario1';
 var contrasena = "123456789";
 
-
+//validacion de usuario
 
 const log =()=>{
     let usuarioLog = $('#nombreUsuario').val() 

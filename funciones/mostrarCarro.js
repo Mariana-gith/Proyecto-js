@@ -1,22 +1,25 @@
 
 
- var carrito=$('#carro')
+ var carrito=$('#carro  tbody')
+
+ //funcion que nos permite visualizar las compras
 
 const mostrarCompra =()=> {
     let comprados= "";
     let carroArray = JSON.parse( localStorage.getItem('lista de compras'))
     if (carroArray == undefined){
         carrito.html('<p>No se ingresaron compras<p/>') 
-        alert('No se ingresaron Pedidos')
+       // alert('No se ingresaron Pedidos')
        
     }else{
         carroArray.forEach(compra => {comprados+=
-                `<table class="table table-light">
+                `<table class="table table-light card">
                     <thead>
-                    <tr>           
-                        <th scope="col">${compra.nombre}</th>
-                        <th scope="col">${compra.precio}</th>
-                        <th scope="col">${compra.tipo}</th>
+                    <tr id=comprado >           
+                        <td scope="col" >${compra.nombre}</td>
+                        <td scope="col">${compra.precio}</td>
+                        <td scope="col">${compra.tipo}</td>
+                        <td scope="col"><button  onclick="eliminarProd(${compra.id})">X</button></td>
                     </tr>
                     </thead>
                 </table>
@@ -25,17 +28,24 @@ const mostrarCompra =()=> {
                 </div>`        
         });
 
-        carrito.hide()
-        carrito.show(3000)
+       carrito.hide()
+       carrito.slideDown(2000)
+       carrito.html(comprados)
+   
+     //Funcion que nos permite eliminar productos no deseados 
+        eliminarProd =(elem)=>{
+                    $("#comprado").remove(); //html
+                    
+                    let productoEliminado = carroArray.find((p)=> (p.id ===elem))
+                    if (true){
+                        console.log(productoEliminado)   //localStorage
+                    }
+             
+                }
+        }
     }
     
-    carrito.html(comprados)
-    
-    
-
-    
-    
-}
+   
 
 
 const irAlatienda = ()=> {
@@ -48,4 +58,4 @@ const irAlatienda = ()=> {
    }
 
 
-   
+

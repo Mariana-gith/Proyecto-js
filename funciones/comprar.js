@@ -1,17 +1,31 @@
 
+
+// variable global para todas las compras
+
 var carritoArray = [];
 
-
+// elegir productos
 const comprar =(nomb)=>{
-
-    let prodLista = JSON.parse(localStorage.getItem('productos'))
-    let productoElegido = prodLista.find((p)=> (p.id === nomb ))
+   
+    let productoElegido = bd.find((p)=> (p.id === nomb ))
 
     carritoArray.push(productoElegido)
-    alert(`compraste`)
+    $("#msjCompra").html("compraste").fadeIn(3000).hide(3000)
     
+    console.log()
 
     localStorage.setItem('lista de compras' , JSON.stringify(carritoArray))
 }
+
+
+
+ 
+
+
+   
+    
+  
+    
+     
 
 
