@@ -1,21 +1,26 @@
 
 
-// variable global para todas las compras
-
-var carritoArray = [];
+// Id de cada compras
+var compraId = 0;
 
 // elegir productos
 const comprar =(nomb)=>{
-   
-    let productoElegido = bd.find((p)=> (p.id === nomb ))
-
-    carritoArray.push(productoElegido)
-    $("#msjCompra").html("compraste").fadeIn(3000).hide(3000)
     
-    console.log()
+    var carroArray = carroArray = JSON.parse( localStorage.getItem('lista de compras'))
+    if(carroArray == null || carroArray == undefined){
+        carroArray = []
+    } else {
+        compraId = carroArray[ carroArray.length - 1 ].id + 1 //identifica la ultima posicion para agregar mas 
+    }
 
-    localStorage.setItem('lista de compras' , JSON.stringify(carritoArray))
+    let productoElegido = bd.find((p)=> (p.id === nomb ))
+    let nuevaCompra = new Compra (productoElegido, compraId++)
+    carroArray.push(nuevaCompra)
+    $("#msjCompra").html("compraste")
+    
+    localStorage.setItem('lista de compras' , JSON.stringify(carroArray))
 }
+
 
 
 

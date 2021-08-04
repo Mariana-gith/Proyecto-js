@@ -32,6 +32,13 @@ var prodTOdos = localStorage.setItem('Lista de Productos', JSON.stringify(bd))
 
 
 
-
+class Compra {
+    constructor(pProducto, pCompraId){
+        this.producto = pProducto
+        this.id= pCompraId
+    }
 
     
+}
+
+

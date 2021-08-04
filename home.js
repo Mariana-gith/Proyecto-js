@@ -17,5 +17,5 @@ $('#contra').animate({fontSize: '3em'}, "slow");
 
 
 creaCards()
- 
+mostrarCompra()
 
