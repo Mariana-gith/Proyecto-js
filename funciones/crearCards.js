@@ -19,7 +19,7 @@ const creaCards =()=> {
             <div class = "card-body">
                 <button onclick ="comprar(${p.id})" type="button" class="btn btn-success">comprar</button>
             </div>
-            <div id="msjCompra"></div>
+           
         </div>`})
         
    

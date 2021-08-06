@@ -13,10 +13,10 @@ const mostrarCompra = () => {
             comprados+=
                 `<table class="table table-light card">
                     <thead>
-                    <tr id=comprado >           
-                        <td scope="col">${compra.nombre}</td>
-                        <td scope="col">${compra.precio}</td>
-                        <td scope="col">${compra.tipo}</td>
+                    <tr >           
+                        <td scope="col">${compra.producto.nombre}</td>
+                        <td scope="col">${compra.producto.precio}</td>
+                        <td scope="col">${compra.producto.tipo}</td>
                         <td scope="col"><button  onclick="eliminarProd(${compra.id})" >X</button></td>
                     </tr>
                     </thead>
@@ -35,7 +35,7 @@ const mostrarCompra = () => {
         carroArray= carroArray.filter((p)=> (p.id !==elem))
         localStorage.setItem('lista de compras', JSON.stringify(carroArray)) //sobreescribe en localstorage los productos eliminados
         //alert('eliminando Compra ...')
-        $("#comprado").append('Eliminando Compra...').fadeOut(2000)
+        $(".comprado").append('Eliminando Compra...').fadeOut(3000)
         setTimeout (() => {
             window.location = './carrito.html';
           },1000)

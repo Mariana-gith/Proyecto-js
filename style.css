@@ -3,9 +3,24 @@
   margin: 1%;
 }
 
+.msjCompra {
+  position: fixed;
+  z-index: 100;
+  font-size: -webkit-xxx-large;
+  background-color: #80808042;
+}
+
 .car-carrito {
   padding-top: 10%;
   padding-bottom: 40%;
+}
+
+.comprado {
+  position: fixed;
+  z-index: 100;
+  font-size: -webkit-xxx-large;
+  background-color: #80808042;
+  padding: 6%;
 }
 
 .body_bgColor {

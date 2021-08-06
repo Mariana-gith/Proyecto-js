@@ -16,7 +16,7 @@ const comprar =(nomb)=>{
     let productoElegido = bd.find((p)=> (p.id === nomb ))
     let nuevaCompra = new Compra (productoElegido, compraId++)
     carroArray.push(nuevaCompra)
-    $("#msjCompra").html("compraste")
+    $(".msjCompra ").html("compraste").show().hide(3000)
     
     localStorage.setItem('lista de compras' , JSON.stringify(carroArray))
 }
